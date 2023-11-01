@@ -1,5 +1,5 @@
 # React + Vite
-# THE DESCRIPTION BELOW IS OF THIS WEBSITE I CREATED IN REACT JS. IT'S JUST THE FRONT END ONLY. THE EMAILS DONT WORK!!!
+#### THE DESCRIPTION BELOW IS OF THIS WEBSITE I CREATED IN REACT JS. IT'S JUST THE FRONT END ONLY. THE EMAILS DONT WORK!!!
 
 # Laundreal Auto - Your Ultimate Laundry Experience
 Welcome to the world of Laundreal Auto, where laundry and cleaning services meet modern convenience and quality care. Our website is designed to provide you with a seamless and informative experience, ensuring that your laundry needs are met with excellence.
