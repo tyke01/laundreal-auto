@@ -1,0 +1,24 @@
+
+html, body {
+    scroll-behavior: smooth;
+  }
+  
+.hero-img{
+    background-image: url(/washing-machine-1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.service-img{
+  background-image: url(/washing-machine-2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.flex-2{
+  flex: 2;
+}
+.title{
+  @apply text-2xl font-bold mb-4
+}
