@@ -3,7 +3,7 @@ import { Features, LeftServices, RightService } from "../data";
 
 const Services = () => {
   return (
-    <section className="min-h-screen py-5 flex flex-col items-center">
+    <section id="services" className="min-h-screen py-5 flex flex-col items-center">
       <div className="flex flex-col items-center justify-center bg-primary-white px-20">
         <div className="text-center">
           <h1 className="text-secondary-clr text-3xl font-semibold">
@@ -15,9 +15,9 @@ const Services = () => {
           </p>
         </div>
 
-        <div className=" items-center mt-10 grid grid-cols-3 gap-6">
+        <div className=" items-center mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {Features.map((feature) => (
-            <div key={feature.id} className="flex flex-col items-center ">
+            <div key={feature.id} className="flex flex-col items-center w-full">
               <span className="text-3xl bg-secondary-blue-bg p-5 rounded-full text-primary mb-3">
                 {feature.icon}
               </span>
@@ -36,7 +36,7 @@ const Services = () => {
           {" "}
           Our Services{" "}
         </h1>
-        <div className="flex items-center gap-6">
+        <div className="flex flex-col md:flex-row items-center gap-6">
           <div className=" flex flex-col items-end gap-8">
             {/*  */}
             {LeftServices.map((service) => (
@@ -56,7 +56,7 @@ const Services = () => {
             {/*  */}
           </div>
 
-          <div className="w-[400px]">
+          <div className="w-[400px] hidden lg:block">
             <img src="Fabric-Suit.png" alt="services" />
           </div>
 

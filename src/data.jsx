@@ -13,9 +13,8 @@ import {
 import { TbIroning1 } from "react-icons/tb";
 import { GiWashingMachine, GiVacuumCleaner } from "react-icons/gi";
 import { LiaIndustrySolid } from "react-icons/lia";
-import { BiSolidDryer, BiSolidPhoneCall } from "react-icons/bi";
+import { BiSolidDryer, BiSolidPhoneCall, BiCurrentLocation } from "react-icons/bi";
 import { IoMdBusiness } from "react-icons/io";
-import { GrMapLocation } from "react-icons/gr";
 
 export const Features = [
   {
@@ -152,7 +151,7 @@ export const ReviewsData = [
 export const ContactInfo = [
   {
     id: 1,
-    icon: <GrMapLocation />,
+    icon: <BiCurrentLocation />,
     title: "Nairobi Office",
     details: "127 Mars alley, Mars, Milky Way",
   },

@@ -9,10 +9,13 @@ import { ContactInfo } from "../data";
 
 const Footer = () => {
   return (
-    <footer className="w-full text-primary">
-      <div className="bg-[#121212] px-20 py-6 flex flex-col lg:flex-row ">
-        <div className="flex flex-col gap-6 flex-1">
-          <h1 className="text-3xl font-Agbalumo font-bold">Laundreal Auto</h1>
+    <footer id="footer" className="w-full text-primary">
+      <div className="bg-[#121212] px-20 py-6 flex flex-col gap-10 lg:flex-row ">
+        <div className="flex flex-col gap-4 flex-1">
+          <p className="flex flex-col gap-2  mb-4">
+            <h1 className="text-3xl font-Agbalumo font-bold">Laundreal Auto</h1>
+            <div className="bg-secondary-blue-bg w-1/4 h-2"></div>
+          </p>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet
             debitis nisi, vel cumque ducimus aliquam facilis, 
@@ -37,17 +40,25 @@ const Footer = () => {
         </div>
         {/*  */}
         <div className="flex flex-col flex-1">
-          <h1 className="title">Our Services</h1>
+          <p className="flex flex-col gap-2  mb-4">
+            <h1 className="title">Our Services</h1>
+            <div className="bg-secondary-blue-bg w-1/4 h-2"></div>
+          </p>
           <p className="flex flex-col gap-5">
-            <span>Dry Cleaning</span>
-            <span>Laundry Pickup</span>
-            <span>Corporate Laundry</span>
-            <span>Specialty Cleaning</span>
+            <span className="uppercase">Dry Cleaning</span>
+            <span className="uppercase">Laundry Pickup</span>
+            <span className="uppercase">Corporate Laundry</span>
+            <span className="uppercase">Specialty Cleaning</span>
+            <span className="uppercase">IRONING</span>
+            <span className="uppercase">WASHING</span>
           </p>
         </div>
         {/*  */}
         <div className="flex flex-col flex-1">
-          <h1 className="title">Contact Info</h1>
+          <p className="flex flex-col gap-2  mb-4">
+            <h1 className="title">Contact Info</h1>
+            <div className="bg-secondary-blue-bg w-1/4 h-2"></div>
+          </p>
           <div>
             {ContactInfo.map((contact) => (
               <div key={contact.id} className="flex mb-5 gap-4">
@@ -58,7 +69,7 @@ const Footer = () => {
                     <h1 className=" text-xs">{contact.title}</h1>
                   </div>
                   {Array.isArray(contact.details) ? (
-                    <ul>
+                    <ul className="text-xs">
                       {contact.details.map((detail, index) => (
                         <li key={index}>{detail}</li>
                       ))}
@@ -73,7 +84,10 @@ const Footer = () => {
         </div>
         {/*  */}
         <div className="flex flex-col flex-1">
-          <h1 className="title">Newsletter</h1>
+          <p className="flex flex-col gap-2  mb-4">
+            <h1 className="title">Newsletter</h1>
+            <div className="bg-secondary-blue-bg w-1/4 h-2"></div>
+          </p>
           <div className="flex flex-col gap-4">
             <p>stay upto date with our latest news and services</p>
             <input

@@ -1,16 +1,15 @@
-import { MdMarkEmailUnread } from "react-icons/md";
 import { ContactInfo } from "../data";
 
 const Contact = () => {
   return (
-    <section className="p-20 mt-10 bg-gray-bg">
-      <div className="flex">
-        <div className="bg-secondary-blue-bg flex flex-col w-[700px] p-10 text-primary justify-center gap-4">
+    <section id="contact" className=" p-5 lg:p-20 mt-10 bg-gray-bg">
+      <div className="flex flex-col-reverse lg:flex-row">
+        <div className="bg-secondary-blue-bg flex flex-col lg:w-[700px] p-10 text-primary justify-center gap-4">
           <h3 className="text-lg font-semibold">CONTACT US</h3>
           <h1 className="text-2xl font-bold">GET IN TOUCH</h1>
 
           <div className="flex flex-col">
-            <div className="flex items-center gap-4 flex-wrap mb-4">
+            <div className="flex items-start gap-4 flex-wrap mb-4">
               <input
                 type="text"
                 placeholder="Name"
@@ -39,7 +38,7 @@ const Contact = () => {
                 cols="63"
                 rows="5"
                 placeholder="Your message here "
-                className="p-5 outline-none"
+                className="p-5 outline-none w-[350px] lg:w-[600px]"
               ></textarea>
             </span>
             <span>

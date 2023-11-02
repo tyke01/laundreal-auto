@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="min-h-screen pt-8 hero-img mt-16 flex flex-col items-start justify-center text-white px-40"
+      className="min-h-screen lg:pt-8 hero-img mt-16 flex flex-col items-start justify-center text-white px-5 pt-20 lg:px-40"
     >
       <div className="w-3/4 ">
         <h3 className="uppercase font-bold text-4xl">
@@ -20,8 +20,8 @@ const Home = () => {
         </button>
       </div>
 
-      <div className="flex items-center mt-12">
-        <div className="bg-secondary-blue-bg flex gap-5 items-center px-8 py-6">
+      <div className="flex flex-col lg:flex-row w-full items-center mt-12 py-2">
+        <div className="bg-secondary-blue-bg flex gap-5 items-center px-8 py-6 w-full">
           <span className="text-2xl">
             <BsFillTelephoneFill />
           </span>
@@ -31,7 +31,7 @@ const Home = () => {
           </p>
         </div>
 
-        <div className="bg-dark-blue-bg flex gap-5 items-center px-8 py-6">
+        <div className="bg-dark-blue-bg flex gap-5 items-center px-8 py-6 w-full">
           <span className="text-2xl">
             <AiOutlineClockCircle />
           </span>
@@ -41,7 +41,7 @@ const Home = () => {
           </p>
         </div>
 
-        <div className="bg-light-blue-bg flex gap-5 items-center px-8 py-6">
+        <div className="bg-light-blue-bg flex gap-5 items-center px-8 py-6 w-full">
           <span className="text-2xl">
             <BsFillEnvelopeFill />
           </span>

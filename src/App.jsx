@@ -7,7 +7,7 @@ function App() {
     <main className="">
       <Nav />
 
-      <div className=""> 
+      <div className="w-full"> 
         <Home/>
         <About />
         <Services />

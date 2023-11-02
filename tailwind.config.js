@@ -5,7 +5,7 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-   
+
     extend: {
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],
@@ -27,7 +27,6 @@ export default {
         'secondary-clr': '#2da2dc',
         'dark-blue': '#0071bc',
         'primary-yellow': '#f0e24b',
-
       },
       boxShadow: {
         '3xl': '0 10px 40px rgba(0, 0, 0, 0.1)'

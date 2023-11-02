@@ -2,16 +2,16 @@ import { ReviewsData } from "../data";
 
 const Reviews = () => {
   return (
-    <section className="flex flex-col justify-center items-center mt-10 px-20 bg-primary-white py-6">
+    <section id="reviews" className="flex flex-col justify-center items-center mt-10 px-20 bg-primary-white py-6">
       <h1 className="text-secondary-clr text-3xl font-semibold">
         What People Say About Us
       </h1>
-      <div className="grid grid-cols-2 gap-5 mt-10">
+      <div className="grid md:grid-cols-2 gap-5 mt-10">
         {/*  */}
         {ReviewsData.map((review) => (
-          <div key={review.id} className="flex gap-6">
+          <div key={review.id} className="flex flex-col lg:flex-row gap-6 items-center justify-center">
             {/* left */}
-            <div className="flex flex-col items-center justify-center w-[300px]">
+            <div className="flex flex-col items-center justify-center w-[100px] md:w-[300px]">
               <span className="w-[5.5rem] aspect-square rounded-full flex items-center justify-center bg-secondary-blue-bg">
                 <img
                   src={review.img}
@@ -23,7 +23,7 @@ const Reviews = () => {
               <p className="text-[#666] text-sm">{review.title}</p>
             </div>
             {/* right */}
-            <div className="bg-card-bg p-4 flex relative flex-col before:w-8 before:aspect-square before:bg-card-bg before:absolute before:rotate-45 before:top-10 before:-left-4 before:-z-[2] z-10 w-[700px]">
+            <div className="bg-card-bg p-4 flex relative flex-col before:w-8 before:aspect-square before:bg-card-bg before:absolute before:rotate-45 lg:before:top-10 lg:before:-left-4 before:-z-[2] before:-top-4 before:left-44 z-10 w-[300px] lg:w-[700px]">
               <div>
                 <span className="text-xl text-secondary-clr"> ❝ </span>
                 <span>{review.content}</span>
